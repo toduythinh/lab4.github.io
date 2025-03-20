@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #f4f4f4;
+    border-bottom: 2px solid #000;
+}
+
+header .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 28px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Projects */
+.projects {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 15px;
+    border: 2px solid #000;
+    margin: 10px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    padding: 5px 0;
+}
+
+/* Work and Education */
+.work-education {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.work, .education {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 15px;
+    border: 2px solid #000;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Reviews */
+.reviews {
+    text-align: center;
+    padding: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review {
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.review p {
+    margin-bottom: 5px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.position {
+    font-style: italic;
+    color: gray;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #000;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects, .work, .education {
+        width: 90%;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 90%;
+    }
+}
